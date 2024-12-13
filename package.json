@@ -59,7 +59,8 @@
     "test": "npm run build && node examples/server/server.js --karma karma.conf.js --single-run",
     "test-ss": "mocha --reporter spec --bail --check-leaks test/",
     "test-cov": "npm run build && node examples/server/server.js --karma karma.conf.js --single-run",
-    "start": "node example/server.js"
+    "start": "node example/server.js",
+    "prepare": "npm run build"
   },
   "tonicExampleFilename": "examples/tonic/js-to-html-tonic-example.js",
   "qa-control": {
