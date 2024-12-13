@@ -29,7 +29,7 @@ export type ArrayContent = (HtmlBase|string|HTMLElement|null)[]
 export type Content = string|ArrayContent|null
 
 export type Attr4HTMLElement = {
-    class?:string,
+    class?:string | string[],
     id?:string,
     $on?:{click?:EventListener, blur?:EventListener},
     $attrs?:{[key:string]:string},
